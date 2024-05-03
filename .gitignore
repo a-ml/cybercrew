@@ -1,3 +1,8 @@
 config.ini
 YT_*
 cybercrew_old.ipynb
+docs/
+logs/
+resources/
+cybercrew.ipynb
+cybercrew_v0.2.ipynb
