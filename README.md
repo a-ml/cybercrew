@@ -7,7 +7,7 @@
 ## 📖 Overview
 
 - **CyberCrew** [notebook] pretends to become a **virtual cybersecurity operations center** that operates through various **intelligent agents**.
-  different roles, including SOC Manager <img src='visualizations/manager.png' height=20>, Triage Specialist <img src='visualizations/triage.png' height=20>, Senior Security Analyst <img src='visualizations/senior_analyst.png' height=20>, Threat Intelligence Specialist <img src='visualizations/threat_analyst.png' height=20>. These
+  different roles, including SOC Manager <img src='visualizations/soc_manager.png' height=20>, Triage Specialist <img src='visualizations/triage.png' height=20>, Senior Security Analyst <img src='visualizations/senior_analyst.png' height=20>, Threat Intelligence Specialist <img src='visualizations/threat_analyst.png' height=20>. These
   agents form a multi-agent organizational structure and are united by a mission to "Autonomously analyze security events."
 - The primary objective of CyberCrew is to offer a complete zero human intervention in the process of analyzing security alerts within a SOC we tend to build an **easy-to-use**, **highly customizable** and **extendable** framework, built on top of CrewAI
   which is supported by large language models (LLMs).
