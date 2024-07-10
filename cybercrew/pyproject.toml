@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cybercrew"
+version = "0.1.0"
+description = "cybercrew using crewAI"
+authors = ["Kapenge Lenço <kapenge.lenco@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.30.11" }
+
+[tool.poetry.scripts]
+cybercrew = "cybercrew.main:run"
+train = "cybercrew.main:train"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

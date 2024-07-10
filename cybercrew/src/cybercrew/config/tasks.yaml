@@ -1,0 +1,70 @@
+tk_thehive_input:
+  description: >
+    USE THE AVAILABLE TOOL and retrieve ALL the alerts for triage and analysis.
+    Use thehive_alerts tool and retrieve the alerts FOCUS on alerts with severity 2, 3 and 4:
+      Do I need to use a tool? YES ALWAYS
+      DO NOT change any of the content of the document or add content to it.
+    It is CRITICAL to your task to only retrieve the alerts on TheHive cybersecurity case management platform.
+  expected_output: >
+    A comprehensive list of Security alerts to be analyzed.
+
+tk_triage_alerts:
+  description: >
+    ANALYZE security events:
+      Review event severity
+      Identify patterns, anomalies, and potential threats
+      For each event:
+        Assess criticality and impact
+        Determine if false positive or justified
+        Prioritize based on criticality
+        Enrich with contextual data
+    OUTPUT for each alert:
+      Alert ID
+      Alert name
+      Brief summary
+      Key points
+      Affected user/device
+      Criticality level
+    FOCUS on efficiency and accuracy. No unnecessary elaboration.
+  expected_output: >
+    A comprehensive list detailing the triaged events.
+
+tk_write_report:
+  description: >
+    Generate a comprehensive threat intelligence report about {topic}. 
+    Follow these steps:
+      Review Analyst's report on critical events, IOCs, TTPs, and recommendations.
+      Research using threat feeds, security publications, dark web, and OSINT.
+      For each event: correlate with known threats, analyze actors, assess vulnerabilities, evaluate mitigations.
+      Use MITRE ATT&CK for context.
+      Compile structured report: summary, overview, actor profiles, analysis, recommendations.
+      Maintain integrity: use only analyzed alerts and verified sources. No fabrication.
+    Make sure you find any interesting and relevant information given the current threat landscape considering year is 2024.
+  expected_output: >
+    A comprehensive threat intelligence report that.
+    A fully fledge reports with the mains topics, each with a full section of information.
+    Formated as markdown with out '```
+
+tk_triage_review:
+  description: >
+    Generate a comprehensive threat intelligence report about {topic}. 
+    ANALYZE critical alerts escalated by Triage Specialist:
+      Review prioritized events
+        For each critical alert:
+          Investigate using logs, traffic data, and threat intel
+          Identify IOCs and correlate with known TTPs
+          Apply MITRE ATT&CK framework
+          Collaborate with other security teams
+          Assess impact and risk
+      Determine action:
+          Incident response
+          Security control updates
+          Policy/procedure changes
+          Remediation recommendations
+          Document findings in Markdown report
+    MAINTAIN INTEGRITY: Analyze only provided alerts. No invented content. Validate and augment triage report with your expertise.
+    SAVE final report as Markdown file..
+  expected_output: >
+    A detailed report documenting your analysis of the critical events.
+    Identified IOCs and TTPs, potential impact and risk assessment, recommended actions, 
+    and any additional insights or recommendations related to the specific topic of research.
