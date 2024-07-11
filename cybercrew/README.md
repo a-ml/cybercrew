@@ -1,6 +1,6 @@
-# Cybercrew Crew
+# CyberSecCrew
 
-Welcome to the Cybercrew Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Welcome to the CyberSecCrew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
 ## Installation
 
@@ -48,10 +48,14 @@ The cybercrew Crew is composed of multiple AI agents, each with unique roles, go
 
 ## Support
 
-For support, questions, or feedback regarding the Cybercrew Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+For support, questions, or feedback regarding the CyberSecCrew.
+- This is a Study project.
+- Send me a direct message
+
+For support, questions, or feedback regarding the crewAI.
+- Visit CrewAI [documentation](https://docs.crewai.com)
+- Reach out to CrewAI through [GitHub repository](https://github.com/joaomdmoura/crewai)
+- [Join CrewAI Discord](https://discord.com/invite/X4JWnZnxPb)
+- [Chat with CrewAI docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
