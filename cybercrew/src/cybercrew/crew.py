@@ -59,18 +59,20 @@ class CyberSecCrew():
    			llm=self.ollama_llm
 		)
 
-	@task
-	def tk_thehive_input(self) -> Task:
-		return Task(
-			config=self.tasks_config['tk_thehive_input'],
-			agent=self.triage_specialist()
-		)
+	# @task
+	# def tk_thehive_input(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['tk_thehive_input'],
+	# 		agent=self.triage_specialist(),
+	# 		output_file='alerts.json'
+	# 	)
 
 	@task
 	def tk_triage_alerts(self) -> Task:
 		return Task(
 			config=self.tasks_config['tk_triage_alerts'],
-			agent=self.triage_specialist()
+			agent=self.triage_specialist(),
+   			output_file='triaged_alerts.md'
 		)
 
 	@task
@@ -78,7 +80,7 @@ class CyberSecCrew():
 		return Task(
 			config=self.tasks_config['tk_triage_review'],
 			agent=self.senior_soc_analyst(),
-			output_file='cyber_analyst_report.md'
+			output_file='triage_review_report.md'
 		)
 
 	@task
@@ -86,12 +88,12 @@ class CyberSecCrew():
 		return Task(
 			config=self.tasks_config['tk_write_report'],
 			agent=self.threat_intell(),
-			output_file='cyber_report.md'
+			output_file='threat_intell_report.md'
 		)
 
 	@crew
 	def crew(self) -> Crew:
-		"""Creates the CyberCrew"""
+		"""Creates the CyberSecCrew"""
 		return Crew(
 			agents=self.agents, # Automatically created by the @agent decorator
 			tasks=self.tasks, # Automatically created by the @task decorator

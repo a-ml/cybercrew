@@ -294,17 +294,17 @@ lxml = ["lxml"]
 
 [[package]]
 name = "boto3"
-version = "1.34.141"
+version = "1.34.143"
 description = "The AWS SDK for Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "boto3-1.34.141-py3-none-any.whl", hash = "sha256:f906c797a02d37a3b88fe4c97e4d72b387e19ab6f3096d2f573578f020fd9bf4"},
-    {file = "boto3-1.34.141.tar.gz", hash = "sha256:947c7a94ac3a2131142914a53afc3b1c5a572d6a79515bf2f0473188817cfcd6"},
+    {file = "boto3-1.34.143-py3-none-any.whl", hash = "sha256:0d16832f23e6bd3ae94e35ea8e625529850bfad9baccd426de96ad8f445d8e03"},
+    {file = "boto3-1.34.143.tar.gz", hash = "sha256:b590ce80c65149194def43ebf0ea1cf0533945502507837389a8d22e3ecbcf05"},
 ]
 
 [package.dependencies]
-botocore = ">=1.34.141,<1.35.0"
+botocore = ">=1.34.143,<1.35.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.10.0,<0.11.0"
 
@@ -313,13 +313,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.34.141"
+version = "1.34.143"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "botocore-1.34.141-py3-none-any.whl", hash = "sha256:0e661a452c0489b6d62a9c91fed3320d5690a524489a7e50afc8efadb994dba8"},
-    {file = "botocore-1.34.141.tar.gz", hash = "sha256:d2815c09037039a287461eddc07af895d798bc897e6ba4b08f5a12eaa9886ff1"},
+    {file = "botocore-1.34.143-py3-none-any.whl", hash = "sha256:094aea179e8aaa1bc957ad49cc27d93b189dd3a1f3075d8b0ca7c445a2a88430"},
+    {file = "botocore-1.34.143.tar.gz", hash = "sha256:059f032ec05733a836e04e869c5a15534420102f93116f3bc9a5b759b0651caf"},
 ]
 
 [package.dependencies]
@@ -1451,13 +1451,13 @@ requests = ["requests (>=2.20.0,<3.0.0.dev0)"]
 
 [[package]]
 name = "google-cloud-aiplatform"
-version = "1.58.0"
+version = "1.59.0"
 description = "Vertex AI API client library"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "google-cloud-aiplatform-1.58.0.tar.gz", hash = "sha256:7a05aceac4a6c7eaa26e684e9f202b829cc7e57f82bffe7281684275a553fcad"},
-    {file = "google_cloud_aiplatform-1.58.0-py2.py3-none-any.whl", hash = "sha256:21f1320860f4916183ec939fdf2ff3fc1d7fdde97fe5795974257ab21f9458ec"},
+    {file = "google-cloud-aiplatform-1.59.0.tar.gz", hash = "sha256:2bebb59c0ba3e3b4b568305418ca1b021977988adbee8691a5bed09b037e7e63"},
+    {file = "google_cloud_aiplatform-1.59.0-py2.py3-none-any.whl", hash = "sha256:549e6eb1844b0f853043309138ebe2db00de4bbd8197b3bde26804ac163ef52a"},
 ]
 
 [package.dependencies]
@@ -1468,7 +1468,7 @@ google-cloud-bigquery = ">=1.15.0,<3.20.0 || >3.20.0,<4.0.0dev"
 google-cloud-resource-manager = ">=1.3.3,<3.0.0dev"
 google-cloud-storage = ">=1.32.0,<3.0.0dev"
 packaging = ">=14.3"
-proto-plus = ">=1.22.0,<2.0.0dev"
+proto-plus = ">=1.22.3,<2.0.0dev"
 protobuf = ">=3.19.5,<3.20.0 || >3.20.0,<3.20.1 || >3.20.1,<4.21.0 || >4.21.0,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<5.0.0dev"
 pydantic = "<3"
 shapely = "<3.0.0dev"
@@ -2369,13 +2369,13 @@ extended-testing = ["beautifulsoup4 (>=4.12.3,<5.0.0)", "lxml (>=4.9.3,<6.0)"]
 
 [[package]]
 name = "langsmith"
-version = "0.1.84"
+version = "0.1.85"
 description = "Client library to connect to the LangSmith LLM Tracing and Evaluation Platform."
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "langsmith-0.1.84-py3-none-any.whl", hash = "sha256:01f3c6390dba26c583bac8dd0e551ce3d0509c7f55cad714db0b5c8d36e4c7ff"},
-    {file = "langsmith-0.1.84.tar.gz", hash = "sha256:5220c0439838b9a5bd320fd3686be505c5083dcee22d2452006c23891153bea1"},
+    {file = "langsmith-0.1.85-py3-none-any.whl", hash = "sha256:c1f94384f10cea96f7b4d33fd3db7ec180c03c7468877d50846f881d2017ff94"},
+    {file = "langsmith-0.1.85.tar.gz", hash = "sha256:acff31f9e53efa48586cf8e32f65625a335c74d7c4fa306d1655ac18452296f6"},
 ]
 
 [package.dependencies]
@@ -2885,13 +2885,13 @@ sympy = "*"
 
 [[package]]
 name = "openai"
-version = "1.35.11"
+version = "1.35.13"
 description = "The official Python library for the openai API"
 optional = false
 python-versions = ">=3.7.1"
 files = [
-    {file = "openai-1.35.11-py3-none-any.whl", hash = "sha256:585eb1780a6d4dd4f95768da24134d4a83cb84c809306f4bb027b449c9eee7d5"},
-    {file = "openai-1.35.11.tar.gz", hash = "sha256:b0103e55e7eacd140905f74154a9ceb42944f4fd18974ce7ecc2931f01e29836"},
+    {file = "openai-1.35.13-py3-none-any.whl", hash = "sha256:36ec3e93e0d1f243f69be85c89b9221a471c3e450dfd9df16c9829e3cdf63e60"},
+    {file = "openai-1.35.13.tar.gz", hash = "sha256:c684f3945608baf7d2dcc0ef3ee6f3e27e4c66f21076df0b47be45d57e6ae6e4"},
 ]
 
 [package.dependencies]
@@ -3860,13 +3860,13 @@ files = [
 
 [[package]]
 name = "pyright"
-version = "1.1.370"
+version = "1.1.371"
 description = "Command line wrapper for pyright"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pyright-1.1.370-py3-none-any.whl", hash = "sha256:fc721601e480a69989775bfc210534a6ca0110ebd0c065244a8d3a151294fc61"},
-    {file = "pyright-1.1.370.tar.gz", hash = "sha256:d0d559d506fc41e3297f721aaa05a1b9f06beda5acc9ac64ca371ce94c28f960"},
+    {file = "pyright-1.1.371-py3-none-any.whl", hash = "sha256:cce52e42ff73943243e7e5e24f2a59dee81b97d99f4e3cf97370b27e8a1858cd"},
+    {file = "pyright-1.1.371.tar.gz", hash = "sha256:777b508b92dda2db476214c400ce043aad8d8f3dd0e10d284c96e79f298308b5"},
 ]
 
 [package.dependencies]

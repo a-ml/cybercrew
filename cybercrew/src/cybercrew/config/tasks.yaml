@@ -10,7 +10,7 @@ tk_thehive_input:
 
 tk_triage_alerts:
   description: >
-    ANALYZE security events:
+    ANALYZE security events{alerts}:
       Review event severity
       Identify patterns, anomalies, and potential threats
       For each event:
@@ -31,7 +31,7 @@ tk_triage_alerts:
 
 tk_write_report:
   description: >
-    Generate a comprehensive threat intelligence report about {topic}. 
+    Generate a comprehensive threat intelligence report about {topic} regarding analyzed events {alerts}. 
     Follow these steps:
       Review Analyst's report on critical events, IOCs, TTPs, and recommendations.
       Research using threat feeds, security publications, dark web, and OSINT.
