@@ -19,11 +19,11 @@ def run():
     # latest_file = max(list_of_files, key=os.path.getctime)
 
     # Read the contents of the latest file
-    with open('/Users/kapenge/Laboratories/_ai/projects/crewai_cybersoc/cybercrew/src/cybercrew/tools/thehive_alerts_20240711_085957.json', 'r') as file:
+    with open('/Users/kapenge/Laboratories/_ai/projects/crewai_cybersoc/cybercrew/src/cybercrew/tools/thehive_alerts_20240711_101312.json', 'r') as file:
         file_contents = json.load(file)
 
     # Define the chunk size (adjust as needed)
-    chunk_size = 4000
+    chunk_size = 100
 
     # Process alerts in chunks
     for i in range(0, len(file_contents), chunk_size):

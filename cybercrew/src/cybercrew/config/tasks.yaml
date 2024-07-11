@@ -10,28 +10,29 @@ tk_thehive_input:
 
 tk_triage_alerts:
   description: >
-    ANALYZE security events{alerts}:
-      Review event severity
-      Identify patterns, anomalies, and potential threats
+    ANALYZE security events in provided json {alerts}:
+      Review event severity.
+      Identify patterns, anomalies, and potential threats.
       For each event:
         Assess criticality and impact
         Determine if false positive or justified
         Prioritize based on criticality
         Enrich with contextual data
     OUTPUT for each alert:
-      Alert ID
+      Alert ID 
       Alert name
       Brief summary
       Key points
       Affected user/device
       Criticality level
     FOCUS on efficiency and accuracy. No unnecessary elaboration.
+    MAKE sure to analyze all the events in the given file.
   expected_output: >
     A comprehensive list detailing the triaged events.
 
 tk_write_report:
   description: >
-    Generate a comprehensive threat intelligence report about {topic} regarding analyzed events {alerts}. 
+    Generate a comprehensive threat intelligence report about {topic} regarding analyzed events. 
     Follow these steps:
       Review Analyst's report on critical events, IOCs, TTPs, and recommendations.
       Research using threat feeds, security publications, dark web, and OSINT.
@@ -47,7 +48,7 @@ tk_write_report:
 
 tk_triage_review:
   description: >
-    Generate a comprehensive threat intelligence report about {topic}. 
+    Generate a comprehensive triage review about {topic} MAKE sure that the Triage Specialist have analysed ALL the alerts in {alerts}. 
     ANALYZE critical alerts escalated by Triage Specialist:
       Review prioritized events
         For each critical alert:
@@ -66,5 +67,3 @@ tk_triage_review:
     SAVE final report as Markdown file..
   expected_output: >
     A detailed report documenting your analysis of the critical events.
-    Identified IOCs and TTPs, potential impact and risk assessment, recommended actions, 
-    and any additional insights or recommendations related to the specific topic of research.

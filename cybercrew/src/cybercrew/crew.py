@@ -11,7 +11,7 @@ import os
 ollama_model = 'http://localhost:11434'
 
 os.environ["OPENAI_API_BASE"] = ollama_model
-os.environ["OPENAI_MODEL_NAME"] = 'openhermes'
+os.environ["OPENAI_MODEL_NAME"] = 'morpheus-crew-agents'
 os.environ["OPENAI_API_KEY"] = "sk-111111111111111111111111111111111111111111111111"
 # Uncomment the following line to use an example of a custom tool
 from cybercrew.tools.thehive_tool import TheHiveAlertsTool
@@ -80,6 +80,7 @@ class CyberSecCrew():
 		return Task(
 			config=self.tasks_config['tk_triage_review'],
 			agent=self.senior_soc_analyst(),
+   			context=[self.tk_triage_alerts()],
 			output_file='triage_review_report.md'
 		)
 
@@ -88,6 +89,7 @@ class CyberSecCrew():
 		return Task(
 			config=self.tasks_config['tk_write_report'],
 			agent=self.threat_intell(),
+			context=[self.tk_triage_review()],
 			output_file='threat_intell_report.md'
 		)
 
